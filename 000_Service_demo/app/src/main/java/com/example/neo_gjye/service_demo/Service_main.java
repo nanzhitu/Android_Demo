@@ -18,7 +18,7 @@ public class Service_main extends AppCompatActivity {
     Button unbindBtn;
     Button startBtn;
     Button stopBtn;
-    Button textBtn;
+    Button sleepBtn;
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class Service_main extends AppCompatActivity {
         startBtn = (Button)findViewById(R.id.startBtn);
         stopBtn = (Button)findViewById(R.id.startBtn);
         unbindBtn = (Button)findViewById(R.id.unbindBtn);
-        textBtn = (Button)findViewById(R.id.textBtn);
+        sleepBtn = (Button)findViewById(R.id.textBtn);
         textView = (TextView)findViewById(R.id.textView) ;
         bindBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +64,13 @@ public class Service_main extends AppCompatActivity {
             public void onClick(View v) {
                 stopService(new Intent(Service_main.this,StartService.class));
                 textView.setText(text);
+            }
+        });
+
+        sleepBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startService(new Intent(Service_main.this,MyIntentService.class));
             }
         });
     }
