@@ -13,7 +13,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:id="@+id/textView" />
 
     <Button
         android:text="同步"
@@ -33,4 +34,13 @@
         android:layout_toEndOf="@+id/sendBtn"
         android:layout_marginStart="39dp"
         android:id="@+id/orderBtn" />
+
+    <Button
+        android:text="本地"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendBtn"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="32dp"
+        android:id="@+id/localBtn" />
 </RelativeLayout>
