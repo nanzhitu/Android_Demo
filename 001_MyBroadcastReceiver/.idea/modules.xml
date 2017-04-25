@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyBroadcastReceiver.iml" filepath="$PROJECT_DIR$/MyBroadcastReceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/001_MyBroadcastReceiver.iml" filepath="$PROJECT_DIR$/001_MyBroadcastReceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stickybroadcast/stickybroadcast.iml" filepath="$PROJECT_DIR$/stickybroadcast/stickybroadcast.iml" />
     </modules>
   </component>
 </project>

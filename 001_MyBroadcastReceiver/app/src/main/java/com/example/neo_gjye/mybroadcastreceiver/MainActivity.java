@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction("myaction");
-                intent.putExtra("name","WXJ");
+                intent.putExtra("name","fish");
                 sendBroadcast(intent);
             }
         });
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction("myaction");
-                intent.putExtra("name","WXJ");
+                intent.putExtra("name","fish");
                 sendOrderedBroadcast(intent,null);
             }
         });
