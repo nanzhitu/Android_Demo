@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/004_Listview.iml" filepath="$PROJECT_DIR$/004_Listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrayadapter/arrayadapter.iml" filepath="$PROJECT_DIR$/arrayadapter/arrayadapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optimizelistview/optimizelistview.iml" filepath="$PROJECT_DIR$/optimizelistview/optimizelistview.iml" />
     </modules>
   </component>
 </project>
