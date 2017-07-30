@@ -1,11 +1,16 @@
 package com.example.contentproviderdemo;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
+
 import java.util.List;
+
+
+
 
 /**
  * Created by Administrator on 2017/7/23.
@@ -69,5 +74,24 @@ public class PersonService {
         }
         return persons;
 
+    }
+
+    public Cursor findAll_cur(){
+
+        SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
+        //List<Person> persons = new ArrayList<Person>();
+        Cursor cursor = db.rawQuery("select * from person",null);
+        return cursor;
+    }
+
+    public Boolean update(Person person){
+
+        SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("name", person.getName());
+        values.put("age", person.getAge());
+        db.update("person", values, "_id=?", new String[]{person.get_id().toString()});
+        db.close();
+        return true;
     }
 }

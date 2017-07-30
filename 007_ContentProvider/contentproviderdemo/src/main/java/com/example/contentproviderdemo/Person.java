@@ -5,11 +5,24 @@ package com.example.contentproviderdemo;
  */
 
 public class Person {
-
     private Integer _id;
     private String name;
     private String age;
 
+    public Person(){}
+
+    public Person( String name, String age)
+    {
+        this._id = 1;
+        this.name = name;
+        this.age = age;
+    }
+    public Person(Integer _id, String name, String age)
+    {
+        this._id = _id;
+        this.name = name;
+        this.age = age;
+    }
     public Integer get_id() {
         return _id;
     }
