@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/arrayadapter" />
             <option value="$PROJECT_DIR$/optimizelistview" />
+            <option value="$PROJECT_DIR$/swiperefreshview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
