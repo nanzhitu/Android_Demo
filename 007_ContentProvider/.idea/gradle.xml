@@ -5,10 +5,11 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:\program_files\AS\gradle\gradle-2.14.1" />
+        <option name="gradleHome" value="D:\program_files_AN\AS\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AsyncQueryHandler" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/contectsdemo" />
             <option value="$PROJECT_DIR$/contentproviderdemo" />

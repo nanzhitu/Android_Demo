@@ -1,1 +1,1 @@
-include ':app', ':contectsdemo', ':contentproviderdemo', ':contentresolver'
+include ':app', ':contectsdemo', ':contentproviderdemo', ':contentresolver', ':AsyncQueryHandler'

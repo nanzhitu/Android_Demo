@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/007_ContentProvider.iml" filepath="$PROJECT_DIR$/007_ContentProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsyncQueryHandler/AsyncQueryHandler.iml" filepath="$PROJECT_DIR$/AsyncQueryHandler/AsyncQueryHandler.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/contectsdemo/contectsdemo.iml" filepath="$PROJECT_DIR$/contectsdemo/contectsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" filepath="$PROJECT_DIR$/contentproviderdemo/contentproviderdemo.iml" />
