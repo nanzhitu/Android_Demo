@@ -20,7 +20,11 @@
             android:name=".MyService"
             android:process="com.example.aidl"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.myapplication.AIDL_Service"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

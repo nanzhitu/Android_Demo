@@ -1,1 +1,1 @@
-include ':app', ':Service_Aidl'
+include ':app', ':Service_Aidl', ':Test_AIDL_Client'
