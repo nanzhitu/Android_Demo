@@ -43,7 +43,14 @@
         <receiver
             android:name=".LocalBroadcastReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
+        <receiver
+            android:name=".USBBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>
+        </receiver>
     </application>
 
 </manifest>
