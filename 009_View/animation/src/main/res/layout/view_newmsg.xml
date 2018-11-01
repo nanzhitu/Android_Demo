@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.neo.myapplication.NewView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_newmsg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_newmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:background="@drawable/shape_new_msg"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/tx_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips"
+            android:textSize="21dp"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</com.neo.myapplication.NewView>

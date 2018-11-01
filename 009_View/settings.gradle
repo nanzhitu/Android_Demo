@@ -1,1 +1,1 @@
-include ':app', ':autoScrollTextView'
+include ':app', ':autoScrollTextView', ':animation'
