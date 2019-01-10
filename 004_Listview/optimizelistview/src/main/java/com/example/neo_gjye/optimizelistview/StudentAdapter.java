@@ -1,5 +1,6 @@
 package com.example.neo_gjye.optimizelistview;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,10 +41,12 @@ public class StudentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        Log.d("StudentAdapter","getView position = "+position);
         ViewHolder viewHolder = null;
         Student student = mData.get(position);
 
         if(convertView == null){
+            Log.d("StudentAdapter","convertView position = "+position);
             convertView = mInflater.inflate(R.layout.item_simpleadapter,null);
             viewHolder = new ViewHolder();
             viewHolder.name = (TextView)convertView.findViewById(R.id.name);
