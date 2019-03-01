@@ -1,1 +1,1 @@
-include ':app', ':standard'
+include ':app', ':standard', ':messengerservice', ':messageclient2'
