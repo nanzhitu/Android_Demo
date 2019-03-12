@@ -15,7 +15,7 @@ import java.util.List;
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder>{
 
     private List<String> list;
-
+    private OnItemClickListener onItemClickListener;
 
     public MyRecyclerViewAdapter(List<String> list) {
         this.list = list;
@@ -29,9 +29,40 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         return viewHolder;
     }
 
+    //定义点击回调接口
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+        void onItemLongClick(View view, int position);
+    }
+
+    //定义一个设置点击监听器的方法
+    public void setOnItemClickListener(MyRecyclerViewAdapter.OnItemClickListener listener) {
+        this.onItemClickListener = listener;
+    }
+
     @Override
-    public void onBindViewHolder(MyRecyclerViewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final MyRecyclerViewAdapter.ViewHolder holder, int position) {
         holder.mText.setText(list.get(position));
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(onItemClickListener != null) {
+                    int pos = holder.getLayoutPosition();
+                    onItemClickListener.onItemClick(holder.itemView, pos);
+                }
+            }
+        });
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                if(onItemClickListener != null) {
+                    int pos = holder.getLayoutPosition();
+                    onItemClickListener.onItemLongClick(holder.itemView, pos);
+                }
+                //表示此事件已经消费，不会触发单击事件
+                return true;
+            }
+        });
     }
 
     @Override

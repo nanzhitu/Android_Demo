@@ -20,6 +20,19 @@ public class MyLinearLayoutManager extends LinearLayoutManager {
 
     public MyLinearLayoutManager(Context context, int orientation, boolean reverseLayout){
         super(context,orientation,reverseLayout);
+
+//        canScrollHorizontally();//能否横向滚动
+//        canScrollVertically();//能否纵向滚动
+//        scrollToPosition(int position);//滚动到指定位置
+//
+//        setOrientation(int orientation);//设置滚动的方向
+//        getOrientation();//获取滚动方向
+//
+//        findViewByPosition(int position);//获取指定位置的Item View
+//        findFirstCompletelyVisibleItemPosition();//获取第一个完全可见的Item位置
+//        findFirstVisibleItemPosition();//获取第一个可见Item的位置
+//        findLastCompletelyVisibleItemPosition();//获取最后一个完全可见的Item位置
+//        findLastVisibleItemPosition();//获取最后一个可见Item的位置
     }
 
     @Override
