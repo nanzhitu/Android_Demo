@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/004_Listview.iml" filepath="$PROJECT_DIR$/004_Listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrayadapter/arrayadapter.iml" filepath="$PROJECT_DIR$/arrayadapter/arrayadapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gridview/gridview.iml" filepath="$PROJECT_DIR$/gridview/gridview.iml" />
       <module fileurl="file://$PROJECT_DIR$/optimizelistview/optimizelistview.iml" filepath="$PROJECT_DIR$/optimizelistview/optimizelistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshview/swiperefreshview.iml" filepath="$PROJECT_DIR$/swiperefreshview/swiperefreshview.iml" />

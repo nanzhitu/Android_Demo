@@ -1,1 +1,1 @@
-include ':app', ':arrayadapter', ':optimizelistview', ':swiperefreshview', ':recyclerview'
+include ':app', ':arrayadapter', ':optimizelistview', ':swiperefreshview', ':recyclerview', ':gridview'
